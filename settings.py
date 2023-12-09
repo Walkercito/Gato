@@ -6,7 +6,6 @@ import os
 load_dotenv()
 
 TOKEN = os.getenv("BOT_TOKEN")
-COOKIE = os.getenv("COOKIE")
 
 BASE_DIR = pathlib.Path(__file__).parent
 COG_DIR = BASE_DIR / "cogs"
