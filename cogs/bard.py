@@ -6,9 +6,9 @@ class BardResponse(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.cookie = {
-            "__Secure-1PSID": "dwhlrLY0kJrd_kbHsIPdHEOBBQKt1vcrbh-L6a0OjKSnqw1Co9h8ieKnntKtgy_R8L24QQ.",
-            "__Secure-1PSIDTS": "sidts-CjIBPVxjStb8Pcd-DbAR7LWsqbD-9_Be5EAV7UcKrFIBDpnhqID3cf9M8mMhGPC6JfxMsRAA",
-            "__Secure-1PSIDCC":"ACA-OxPK5YV46lKG6gH62eSlssMFWvmObUQ28qwYAhmHp73NgLbfvT_A2JLG-tbfR-WxupaZRmw"
+            "__Secure-1PSID": "eghlrCxjL3KeVXIsSZ_zS62q0bZywO9-9LyYR-K4uIUabfkWNijAtGr53gc7EhUR2b2U6A.",
+            "__Secure-1PSIDTS": "sidts-CjEBPVxjSllcseH4L9_qU2PBEJ8YY8SJngEOySzElBAt5agTI_NBfcy43w7G8PwPyM43EAA",
+            "__Secure-1PSIDCC":"ABTWhQGrScVEpeuURt-VKyRjbAvWPYQsyCbsSlVy4XUs_U1RfSSGL77q1mhBb1PfvfMuy2aYEIg"
         }
         self.bard = BardCookies(cookie_dict = self.cookie)
 
@@ -17,7 +17,7 @@ class BardResponse(commands.Cog):
         if message.author == self.bot.user:
             return
 
-        if "bard" in message.content.lower():
+        if "gato" in message.content.lower():
             prompt = message.content 
 
             async with message.channel.typing():
